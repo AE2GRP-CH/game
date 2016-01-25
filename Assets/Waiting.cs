@@ -9,11 +9,14 @@ public class Waiting : MonoBehaviour {
 
 	void Awake()
 	{
-		down.enabled = false;
+
 	}
 
 	public void getValue(Dropdown target)
 	{
 		Debug.Log (string.Format (target.value.ToString()));
+
+		GameObject imageDisplay = GameObject.Find ("mapImage");
+
 	}
 }
